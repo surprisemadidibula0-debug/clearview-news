@@ -19,6 +19,23 @@ window.SITE = {
 window.STORIES = [
   {
     beat: "news",
+    title: "Iran says three more tankers hit mines in Strait of Hormuz",
+    dek: "Iran says three tankers caught fire after hitting mines on Saturday. The US says the main shipping routes are clear.",
+    heroDek: "Iran’s navy and Revolutionary Guards say three tankers caught fire on Saturday after striking mines. The US says it has cleared the main routes, and Reuters could not verify the claims.",
+    date: "15 November 2026",
+    readTime: "2 min read",
+    url: "2026-11-hormuz-tankers-mines.html"
+  },
+  {
+    beat: "politics",
+    title: "Trump says US does not need an Iran deal, sidelines Vance from talks",
+    dek: "President Donald Trump has told Vice President JD Vance to focus on alleged fraud at home instead of negotiations to end the war with Iran.",
+    date: "15 November 2026",
+    readTime: "2 min read",
+    url: "2026-11-trump-iran-deal-vance.html"
+  },
+  {
+    beat: "news",
     title: "Man arrested in Westville after R1.5 million dagga bust",
     dek: "A 32-year-old man has been charged with dealing in dagga after police seized about 320kg of cannabis in Westville.",
     heroDek: "Police say a 32-year-old suspect abandoned a vehicle carrying about 320kg of cannabis and ran into nearby bushes after officers tracked it along the N2 and M19.",
