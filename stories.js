@@ -24,7 +24,10 @@ window.STORIES = [
     heroDek: "Iran’s navy and Revolutionary Guards say three tankers caught fire on Saturday after striking mines. The US says it has cleared the main routes, and Reuters could not verify the claims.",
     date: "15 November 2026",
     readTime: "2 min read",
-    url: "2026-11-hormuz-tankers-mines.html"
+    url: "2026-11-hormuz-tankers-mines.html",
+    image: "hormuz-strait-file.jpg",
+    imageAlt: "A motorboat passing a cargo ship in the Strait of Hormuz",
+    imagePosition: "center 40%"
   },
   {
     beat: "politics",
@@ -32,7 +35,10 @@ window.STORIES = [
     dek: "President Donald Trump has told Vice President JD Vance to focus on alleged fraud at home instead of negotiations to end the war with Iran.",
     date: "15 November 2026",
     readTime: "2 min read",
-    url: "2026-11-trump-iran-deal-vance.html"
+    url: "2026-11-trump-iran-deal-vance.html",
+    image: "iran-deal-story.jpg",
+    imageAlt: "Donald Trump and JD Vance at a Veterans Day ceremony",
+    imagePosition: "center 30%"
   },
   {
     beat: "news",
