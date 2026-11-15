@@ -461,3 +461,9 @@ a { color: inherit; text-decoration: none; }
   .grid { grid-template-columns: 1fr; }
   .article-body p:first-of-type::first-letter { font-size: 2.6rem; }
 }
+
+
+/* ---------- News beat (brand red) ---------- */
+.dot--news { background: var(--accent); }
+.tag--news { background: color-mix(in srgb, var(--accent) 12%, var(--paper-raised)); color: var(--accent-deep); }
+.beatband__bar--news { background: var(--accent); }
