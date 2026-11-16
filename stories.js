@@ -19,6 +19,18 @@ window.SITE = {
 // beat: top | tech | business | arts | sports
 window.STORIES = [
   {
+    beat: "tech",
+    title: "OpenAI releases free tool to detect child sexual abuse material, including AI-generated images",
+    dek: "The classifier is free to approved organisations. ChatGPT will also warn and suspend users who seek such material.",
+    heroDek: "The classifier, built with help from the US child-safety group NCMEC, is free to organisations that apply and are approved. ChatGPT will also warn and suspend users who seek such material.",
+    date: "16 November 2026",
+    readTime: "2 min read",
+    url: "2026-11-openai-csam-classifier.html",
+    image: "openai-warning-screens.jpg",
+    imageAlt: "Two phone screens showing account suspension warnings",
+    imagePosition: "center"
+  },
+  {
     beat: "sports",
     title: "Klopp says FIFA has got worse since Blatter and calls for new leadership",
     dek: "Germany coach Jürgen Klopp criticised FIFA president Gianni Infantino in Berlin, ahead of Germany’s match against the Netherlands.",
