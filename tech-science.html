@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech &amp; Science — ClearView News</title>
+  <meta name="description" content="Tech &amp; Science reports from ClearView News, written by Rolivhuwa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-beat="tech">
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="logo-group">
+        <a href="index.html" class="logo">CLEAR VIEW <span class="logo__accent">NEWS</span></a>
+        <span class="logo__sub">Broadcast News</span>
+      </div>
+      <nav class="nav" aria-label="Main"></nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="ticker" id="ticker" aria-label="Latest headlines" hidden>
+    <div class="ticker__track" id="ticker-track"></div>
+  </div>
+
+  <section class="beatband container">
+    <div class="beatband__bar beatband__bar--science"></div>
+    <h1 class="beatband__title">Tech &amp; Science</h1>
+    <p class="dek">Technology, research, health and the environment, explained clearly.</p>
+  </section>
+
+  <section class="section container">
+    <div class="grid" id="beat-grid"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__brand">CLEAR VIEW <span class="logo__accent">NEWS</span></p>
+        <p class="footer__about">Independent reporting on top stories, tech and science, business, arts and culture, and sport — written and produced by Rolivhuwa, University of Limpopo.</p>
+      </div>
+      <nav class="footer__col" id="footer-beats" aria-label="Categories"></nav>
+      <div class="footer__col" id="footer-contact"></div>
+    </div>
+    <div class="container footer__legal">
+      <p>© 2026 ClearView News. All reports are original work by Rolivhuwa unless otherwise credited.</p>
+    </div>
+  </footer>
+
+  <script src="stories.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

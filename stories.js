@@ -9,13 +9,14 @@
 
 window.SITE = {
   author: "Rolivhuwa",
+  about: "Independent reporting on top stories, tech and science, business, arts and culture, and sport — written and produced by Rolivhuwa, University of Limpopo.",
   email: "surprisemadidibula0@gmail.com",
   phone: "+27799139133",
   phoneDisplay: "+27 79 913 9133",
   facebookUrl: "https://www.facebook.com/share/1HGgnv528W/"
 };
 
-// beat: news | politics | entertainment | sports | science
+// beat: top | tech | business | arts | sports
 window.STORIES = [
   {
     beat: "sports",
@@ -30,7 +31,7 @@ window.STORIES = [
     imagePosition: "center 30%"
   },
   {
-    beat: "news",
+    beat: "top",
     title: "Nearly 1,500 migrants reach Canary Islands in a single day, the most since 2020",
     dek: "Spanish rescuers brought 1,488 people ashore from 14 boats on Saturday, the highest one-day total since 2020.",
     heroDek: "Spanish rescuers brought 1,488 people ashore from 14 boats on Saturday, the highest one-day total since 2020, according to Spain’s EFE news agency.",
@@ -42,7 +43,7 @@ window.STORIES = [
     imagePosition: "center 40%"
   },
   {
-    beat: "politics",
+    beat: "top",
     featured: true,
     title: "ANC and DA open formal coalition talks as parties scramble for council deals",
     dek: "The two largest parties met on Sunday, even as the ANC leadership debates how far to go with the DA.",
@@ -55,7 +56,7 @@ window.STORIES = [
     imagePosition: "center 30%"
   },
   {
-    beat: "news",
+    beat: "top",
     title: "Iran says three more tankers hit mines in Strait of Hormuz",
     dek: "Iran says three tankers caught fire after hitting mines on Saturday. The US says the main shipping routes are clear.",
     heroDek: "Iran’s navy and Revolutionary Guards say three tankers caught fire on Saturday after striking mines. The US says it has cleared the main routes, and Reuters could not verify the claims.",
@@ -67,7 +68,7 @@ window.STORIES = [
     imagePosition: "center 40%"
   },
   {
-    beat: "politics",
+    beat: "top",
     title: "Trump says US does not need an Iran deal, sidelines Vance from talks",
     dek: "President Donald Trump has told Vice President JD Vance to focus on alleged fraud at home instead of negotiations to end the war with Iran.",
     date: "15 November 2026",
@@ -78,7 +79,7 @@ window.STORIES = [
     imagePosition: "center 30%"
   },
   {
-    beat: "news",
+    beat: "top",
     title: "Man arrested in Westville after R1.5 million dagga bust",
     dek: "A 32-year-old man has been charged with dealing in dagga after police seized about 320kg of cannabis in Westville.",
     heroDek: "Police say a 32-year-old suspect abandoned a vehicle carrying about 320kg of cannabis and ran into nearby bushes after officers tracked it along the N2 and M19.",
@@ -90,7 +91,7 @@ window.STORIES = [
     imagePosition: "center 40%"
   },
   {
-    beat: "politics",
+    beat: "top",
     title: "Douglas heads back to the polls on 18 November",
     dek: "The IEC has ordered a revote at the Bongani Community Hall voting district after more than 100 ballots were destroyed before counting.",
     heroDek: "The IEC has ordered a full revote at the Bongani Community Hall voting district in Siyancuma’s Ward 3 after more than 100 cast ballots were destroyed before they could be counted.",

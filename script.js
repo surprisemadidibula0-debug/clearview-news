@@ -1,10 +1,10 @@
 (function () {
   var BEATS = [
-    { id: 'news', label: 'News', page: 'news.html', dot: 'news' },
-    { id: 'politics', label: 'Politics', page: 'politics.html', dot: 'politics' },
-    { id: 'entertainment', label: 'Entertainment', page: 'entertainment.html', dot: 'ent' },
-    { id: 'sports', label: 'Sports', page: 'sports.html', dot: 'sport' },
-    { id: 'science', label: 'Science', page: 'science.html', dot: 'science' }
+    { id: 'top', label: 'Top Stories', page: 'top-stories.html', dot: 'news' },
+    { id: 'tech', label: 'Tech &amp; Science', page: 'tech-science.html', dot: 'science' },
+    { id: 'business', label: 'Business', page: 'business.html', dot: 'politics' },
+    { id: 'arts', label: 'Arts &amp; Culture', page: 'arts-culture.html', dot: 'ent' },
+    { id: 'sports', label: 'Sports', page: 'sports.html', dot: 'sport' }
   ];
   var stories = window.STORIES || [];
   var site = window.SITE || {};
@@ -35,6 +35,37 @@
       '<p class="card__dek">' + esc(s.dek) + '</p>' +
       '<p class="card__meta">' + meta(s) + '</p></div></a></article>';
   }
+
+  // Story pages take their category from stories.js, so renaming a category never breaks old pages
+  var file = location.pathname.split('/').pop();
+  for (var k = 0; k < stories.length; k++) {
+    if (stories[k].url === file) {
+      pageBeat = stories[k].beat;
+      var tagEl = document.querySelector('.article-head .tag');
+      if (tagEl) { var sb = beatInfo(pageBeat); tagEl.className = 'tag tag--' + sb.dot; tagEl.innerHTML = sb.label; }
+      break;
+    }
+  }
+
+  // Logo badge in the top-left corner and browser-tab icon
+  var logoGroup = document.querySelector('.logo-group');
+  if (logoGroup) {
+    var badgeLink = document.createElement('a');
+    badgeLink.href = 'index.html';
+    badgeLink.className = 'logo-badge-link';
+    badgeLink.setAttribute('aria-label', 'ClearView News home');
+    var badgeImg = document.createElement('img');
+    badgeImg.src = 'clearview-logo.jpg';
+    badgeImg.alt = 'ClearView News logo';
+    badgeImg.className = 'logo-badge';
+    badgeImg.width = 44; badgeImg.height = 44;
+    badgeLink.appendChild(badgeImg);
+    logoGroup.insertBefore(badgeLink, logoGroup.firstChild);
+  }
+  var tabIcon = document.createElement('link');
+  tabIcon.rel = 'icon';
+  tabIcon.href = 'clearview-logo.jpg';
+  document.head.appendChild(tabIcon);
 
   var active = BEATS.filter(function (b) { return byBeat(b.id).length > 0; });
 
@@ -79,6 +110,9 @@
     fc.innerHTML = h;
   }
 
+  var about = document.querySelector('.footer__about');
+  if (about && site.about) about.textContent = site.about;
+
   // Homepage: lead story + one section per category that has stories
   var hero = document.getElementById('hero');
   if (hero) {
@@ -92,6 +126,10 @@
         '<p class="dek">' + esc(lead.heroDek || lead.dek) + '</p>' +
         '<p class="meta">' + meta(lead) + '</p>' +
         '<a href="' + esc(lead.url) + '" class="btn">Read the full report →</a>';
+      var wrap = document.createElement('div');
+      wrap.className = 'hero-wrap';
+      hero.parentNode.insertBefore(wrap, hero);
+      wrap.appendChild(hero);
     } else { hero.parentNode.removeChild(hero); }
   }
   var home = document.getElementById('home-sections');
