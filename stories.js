@@ -18,6 +18,18 @@ window.SITE = {
 // beat: news | politics | entertainment | sports | science
 window.STORIES = [
   {
+    beat: "news",
+    title: "Nearly 1,500 migrants reach Canary Islands in a single day, the most since 2020",
+    dek: "Spanish rescuers brought 1,488 people ashore from 14 boats on Saturday, the highest one-day total since 2020.",
+    heroDek: "Spanish rescuers brought 1,488 people ashore from 14 boats on Saturday, the highest one-day total since 2020, according to Spain’s EFE news agency.",
+    date: "16 November 2026",
+    readTime: "2 min read",
+    url: "2026-11-canary-islands-migrants.html",
+    image: "canary-boat.jpg",
+    imageAlt: "A crowded wooden boat at sea",
+    imagePosition: "center 40%"
+  },
+  {
     beat: "politics",
     featured: true,
     title: "ANC and DA open formal coalition talks as parties scramble for council deals",
