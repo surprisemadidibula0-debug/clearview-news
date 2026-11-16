@@ -18,6 +18,19 @@ window.SITE = {
 // beat: news | politics | entertainment | sports | science
 window.STORIES = [
   {
+    beat: "politics",
+    featured: true,
+    title: "ANC and DA open formal coalition talks as parties scramble for council deals",
+    dek: "The two largest parties met on Sunday, even as the ANC leadership debates how far to go with the DA.",
+    heroDek: "The two largest parties met on Sunday, even as the ANC leadership debates how far to go with the DA and holds talks with several other parties.",
+    date: "16 November 2026",
+    readTime: "2 min read",
+    url: "2026-11-anc-da-coalition-talks.html",
+    image: "mbalula-anc.jpg",
+    imageAlt: "ANC Secretary-General Fikile Mbalula",
+    imagePosition: "center 30%"
+  },
+  {
     beat: "news",
     title: "Iran says three more tankers hit mines in Strait of Hormuz",
     dek: "Iran says three tankers caught fire after hitting mines on Saturday. The US says the main shipping routes are clear.",
@@ -54,7 +67,6 @@ window.STORIES = [
   },
   {
     beat: "politics",
-    featured: true,
     title: "Douglas heads back to the polls on 18 November",
     dek: "The IEC has ordered a revote at the Bongani Community Hall voting district after more than 100 ballots were destroyed before counting.",
     heroDek: "The IEC has ordered a full revote at the Bongani Community Hall voting district in Siyancuma’s Ward 3 after more than 100 cast ballots were destroyed before they could be counted.",
