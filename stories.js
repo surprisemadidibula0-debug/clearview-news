@@ -18,6 +18,18 @@ window.SITE = {
 // beat: news | politics | entertainment | sports | science
 window.STORIES = [
   {
+    beat: "sports",
+    title: "Klopp says FIFA has got worse since Blatter and calls for new leadership",
+    dek: "Germany coach Jürgen Klopp criticised FIFA president Gianni Infantino in Berlin, ahead of Germany’s match against the Netherlands.",
+    heroDek: "Germany coach Jürgen Klopp criticised FIFA president Gianni Infantino in Berlin, ahead of Germany’s Nations League match against the Netherlands.",
+    date: "16 November 2026",
+    readTime: "2 min read",
+    url: "2026-11-klopp-fifa-infantino.html",
+    image: "fifa-story.jpg",
+    imageAlt: "A man in a black cap and dark jacket at a stadium",
+    imagePosition: "center 30%"
+  },
+  {
     beat: "news",
     title: "Nearly 1,500 migrants reach Canary Islands in a single day, the most since 2020",
     dek: "Spanish rescuers brought 1,488 people ashore from 14 boats on Saturday, the highest one-day total since 2020.",
