@@ -12,7 +12,7 @@ window.SITE = {
   email: "surprisemadidibula0@gmail.com",
   phone: "+27799139133",
   phoneDisplay: "+27 79 913 9133",
-  facebookUrl: "" // paste your Facebook page link between the quotes
+  facebookUrl: "https://www.facebook.com/share/1HGgnv528W/"
 };
 
 // beat: news | politics | entertainment | sports | science
